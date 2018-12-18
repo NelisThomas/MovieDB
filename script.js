@@ -59,7 +59,7 @@ function inspectMovie(id){
     returnButton.style.display = "block";
     searchContainer.style.display = "none";
     movieDetails.style.display = "flex";
-    body.style.backgroundColor = "#0A095F";
+    body.style.backgroundColor = "rgb(20, 136, 165)";
     fetch(url+apiKey+i+id)
     .then(function(response){
         return response.json();
@@ -91,7 +91,7 @@ function moveSearchBar(){
     isSearchTop = true;
     mainCont.style.justifyContent = "flex-start";
     searchInput.style.marginTop = "10vh";
-    body.style.backgroundColor = "#0A095F";
+    body.style.backgroundColor = "rgb(165, 20, 68)";
 }
 
 function returnHome(){

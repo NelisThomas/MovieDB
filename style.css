@@ -5,7 +5,8 @@ body{
     margin: 0;
     background-color: #053A6C;
     font-family: 'Montserrat', sans-serif;
-    transition: 1s;
+    transition: 1.5s;
+    /* background-color: rgb(20, 136, 165); */
 }
 *{
     transition: 0.5s;
@@ -43,14 +44,13 @@ ul{
     padding: 0;
     overflow: scroll;
     max-height: 80vh;
-    align-items: center;
 }
 li{
     width: 80vw;
     margin: 10% 0 0 0;
     padding: 3% 2% 3% 2%;
     border-radius: 5px;
-    background-color: #eeeeeeb6;
+    background-color: #eeeeee;
     text-align: center;
 }
 /* --------------SINGLE MOVIE----------- */
@@ -72,14 +72,15 @@ a{
     color: white;
     text-decoration: none;
 }
+
 #movieDetails p{
     margin: 0 3vw 0 3vw;
-    line-height: 1;
+    line-height: 150%;
     align-self: flex-start;
 }
 #movieDetails img{
     border: 2px solid white;
-    box-shadow: 1vh 1vh;
+    box-shadow: 1vh 1vh rgba(5, 58, 108, 0.726);
 }
 @media only screen and (max-width: 600px){
     #movieDetails img{
