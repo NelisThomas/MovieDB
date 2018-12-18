@@ -1,0 +1,62 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    border: 0;
+    margin: 0;
+}
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #040344;
+}
+
+/* ---------SEARCH INPUT----------- */
+.searchBar{
+    height: 8vw;
+    width: 45vw;
+    background-color: #1b0133;
+    border: 1px solid white;
+    color: white;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#searchInput{
+    border: 1px solid white;
+    height: 90%;
+    width: 70%;
+    position: relative; 
+}
+.searchButton{
+    width: 10%;
+    height: auto;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.movieList{
+    color: white;
+}
+.movieList li{
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+ul{
+    list-style-type: none;
+}
+/* --------------SINGLE MOVIE----------- */
+#movieDetails{
+ width: 80vh;
+ height: 80vw;
+ position: absolute;
+ background-color: aquamarine;
+ color: black;
+ display: none;
+}
