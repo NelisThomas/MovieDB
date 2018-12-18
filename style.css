@@ -3,60 +3,101 @@ body{
     width: 100vw;
     border: 0;
     margin: 0;
+    background-color: #053A6C;
+    font-family: 'Montserrat', sans-serif;
+    transition: 1s;
+}
+*{
+    transition: 0.5s;
+    user-select: none;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
 }
 #mainContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: #040344;
+    height: 100%;
+    width: 100%;
 }
 
 /* ---------SEARCH INPUT----------- */
-.searchBar{
-    height: 8vw;
-    width: 45vw;
-    background-color: #1b0133;
-    border: 1px solid white;
-    color: white;
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 #searchInput{
     border: 1px solid white;
-    height: 90%;
-    width: 70%;
-    position: relative; 
-}
-.searchButton{
-    width: 10%;
-    height: auto;
-}
-.dropdown{
-    position: relative;
-    display: inline-block;
+    position: static; 
+    height: 8vh;
+    width: 80vw;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 3.5vh;
 }
 .movieList{
     color: white;
 }
-.movieList li{
-    position: absolute;
-    top: 0;
-    z-index: 99;
-}
 ul{
     list-style-type: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    max-height: 80vh;
+    align-items: center;
+}
+li{
+    width: 80vw;
+    margin: 10% 0 0 0;
+    padding: 3% 2% 3% 2%;
+    border-radius: 5px;
+    background-color: #eeeeeeb6;
+    text-align: center;
 }
 /* --------------SINGLE MOVIE----------- */
 #movieDetails{
- width: 80vh;
- height: 80vw;
  position: absolute;
- background-color: aquamarine;
- color: black;
+ left: 0;
+ top: 0;
+ color: white;
  display: none;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+#movieDetails h1{
+    text-align: center;
+    font-weight: bold;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#movieDetails p{
+    margin: 0 3vw 0 3vw;
+    line-height: 1;
+    align-self: flex-start;
+}
+#movieDetails img{
+    border: 2px solid white;
+    box-shadow: 1vh 1vh;
+}
+@media only screen and (max-width: 600px){
+    #movieDetails img{
+    width: 94%;
+    margin-top: 2vh;
+    border-radius: 25px;
+    }
+
+}
+/* -----------------------------RETURN BUTTON ---------------------*/
+#returnButton{
+    position: sticky;
+    align-self: flex-start;
+    top: 2vh;
+    left: 2vw;
+    font-size: 10vh;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    display: none;
 }

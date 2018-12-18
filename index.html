@@ -6,22 +6,20 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <body>
     <div id="mainContainer">
-        <div class="searchBar">
-
-            <div class="dropdown">
-                <input id="searchInput">
-                <ul id="movieList">
-                </ul>
-            </div>
-            
-            <div id="searchButton">Search</div>
+        <div id="searchContainer">
+            <input id="searchInput" placeholder="Search for a movie">
+            <ul id="movieList">
+            </ul>
         </div>
 
         <div id="movieDetails">  
         </div>
+        <i id="returnButton" class="fas fa-angle-double-left"></i>
     </div>
     <script src="script.js"></script>
 </body>
